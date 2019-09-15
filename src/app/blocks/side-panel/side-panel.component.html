@@ -1,5 +1,42 @@
-<ul>
-    <li>My profile</li>
-    <li>Clean Code</li>
-    <li>Structures</li>
-</ul>
+<div class="container">
+    <div class="row">
+        <div class="col-2">
+            <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab"
+                    aria-controls="nav-home" aria-selected="true">About me</a>
+                <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab"
+                    aria-controls="nav-profile" aria-selected="false">Clean Code</a>
+                <a class="nav-item nav-link" id="nav-projects-tab" data-toggle="tab" href="#nav-projects" role="tab"
+                    aria-controls="nav-projects" aria-selected="false">My work</a>
+                <a class="nav-item nav-link" id="nav-photo-tab" data-toggle="tab" href="#nav-photo" role="tab"
+                    aria-controls="nav-photo" aria-selected="false">Photography</a>
+                <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab"
+                    aria-controls="nav-contact" aria-selected="false">Contact</a>
+                <a class="nav-item nav-link" id="nav-cv-tab" data-toggle="tab" href="#nav-cv" role="tab"
+                    aria-controls="nav-cv" aria-selected="false">CV</a>
+            </div>
+        </div>
+        <div class="col-10">
+            <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                    <app-profile-body-panel class="col-lg-12"></app-profile-body-panel>
+                </div>
+                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                    <app-clean-code-body-panel class="col-lg-12"></app-clean-code-body-panel>
+                </div>
+                <div class="tab-pane fade" id="nav-projects" role="tabpanel" aria-labelledby="nav-projects-tab">
+                    <app-projects-body-panel class="col-lg-12"></app-projects-body-panel>
+                </div>
+                <div class="tab-pane fade" id="nav-photo" role="tabpanel" aria-labelledby="nav-photo-tab">
+                    <app-projects-body-panel class="col-lg-12"></app-projects-body-panel>
+                </div>
+                <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                    <app-contact-body-panel class="col-lg-12"></app-contact-body-panel>
+                </div>
+                <div class="tab-pane fade" id="nav-cv" role="tabpanel" aria-labelledby="nav-cv-tab">
+                    <app-cv-body-panel class="col-lg-12"></app-cv-body-panel>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

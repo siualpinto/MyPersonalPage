@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { BodyPanelComponent } from './body-panel.component';
+import { PhotoBodyPanelComponent } from './photo-body-panel.component';
 
-describe('BodyPanelComponent', () => {
-  let component: BodyPanelComponent;
-  let fixture: ComponentFixture<BodyPanelComponent>;
+describe('PhotoBodyPanelComponent', () => {
+  let component: PhotoBodyPanelComponent;
+  let fixture: ComponentFixture<PhotoBodyPanelComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ BodyPanelComponent ]
+      declarations: [ PhotoBodyPanelComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(BodyPanelComponent);
+    fixture = TestBed.createComponent(PhotoBodyPanelComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
