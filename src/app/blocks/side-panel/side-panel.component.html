@@ -1,39 +1,58 @@
 <div class="container">
     <div class="row">
-        <div class="col-2">
+        <div class="divNav col-3" (mouseenter)="animationStyle = !animationStyle"
+            (mouseleave)="animationStyle = !animationStyle">
             <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                 <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab"
-                    aria-controls="nav-home" aria-selected="true">About me</a>
-                <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab"
-                    aria-controls="nav-profile" aria-selected="false">Clean Code</a>
+                    aria-controls="nav-home" aria-selected="true">
+                    <span>
+                        <fa-icon [icon]="faIdBadge" [spin]="animationStyle" size="lg"></fa-icon>
+                        About me
+                    </span>
+                </a>
+                <a class="nav-item nav-link" id="nav-blog-tab" data-toggle="tab" (click)="navigateToBlog()"
+                    [href]="blogLink" role="tab" aria-controls="nav-blog" aria-selected="fa-iconlse"><span>
+                        <fa-icon [icon]="faBlog" [spin]="animationStyle" size="lg"></fa-icon> Blog
+                    </span>
+                </a>
                 <a class="nav-item nav-link" id="nav-projects-tab" data-toggle="tab" href="#nav-projects" role="tab"
-                    aria-controls="nav-projects" aria-selected="false">My work</a>
+                    aria-controls="nav-projects" aria-selected="fa-iconlse"><span>
+                        <fa-icon [icon]="faCubes" [spin]="animationStyle" size="lg"></fa-icon> Projects
+                    </span>
+                </a>
                 <a class="nav-item nav-link" id="nav-photo-tab" data-toggle="tab" href="#nav-photo" role="tab"
-                    aria-controls="nav-photo" aria-selected="false">Photography</a>
+                    aria-controls="nav-photo" aria-selected="fa-iconlse"><span>
+                        <fa-icon [icon]="faCameraRetro" [spin]="animationStyle" size="lg"></fa-icon> Photography
+                    </span>
+                </a>
                 <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab"
-                    aria-controls="nav-contact" aria-selected="false">Contact</a>
+                    aria-controls="nav-contact" aria-selected="fa-iconlse"><span>
+                        <fa-icon [icon]="faEnvelopeSquare" [spin]="animationStyle" size="lg"></fa-icon> Contact
+                    </span>
+                </a>
                 <a class="nav-item nav-link" id="nav-cv-tab" data-toggle="tab" href="#nav-cv" role="tab"
-                    aria-controls="nav-cv" aria-selected="false">CV</a>
+                    aria-controls="nav-cv" aria-selected="fa-iconlse"><span>
+                        <fa-icon [icon]="faFilePdf" [spin]="animationStyle" size="lg"></fa-icon> CV
+                    </span>
+                </a>
             </div>
         </div>
-        <div class="col-10">
+        <div class="col-9">
             <div class="tab-content" id="nav-tabContent">
-                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                <div class="tab-pane fa-iconde show active" id="nav-home" role="tabpanel"
+                    aria-labelledby="nav-home-tab">
                     <app-profile-body-panel class="col-lg-12"></app-profile-body-panel>
                 </div>
-                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-                    <app-clean-code-body-panel class="col-lg-12"></app-clean-code-body-panel>
-                </div>
-                <div class="tab-pane fade" id="nav-projects" role="tabpanel" aria-labelledby="nav-projects-tab">
+                <div class="tab-pane fa-iconde" id="nav-projects" role="tabpanel" aria-labelledby="nav-projects-tab">
                     <app-projects-body-panel class="col-lg-12"></app-projects-body-panel>
                 </div>
-                <div class="tab-pane fade" id="nav-photo" role="tabpanel" aria-labelledby="nav-photo-tab">
+                <div class="tab-pane fa-iconde" id="nav-photo" role="tabpanel" aria-labelledby="nav-photo-tab">
                     <app-projects-body-panel class="col-lg-12"></app-projects-body-panel>
                 </div>
-                <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                <div class="tab-pane fa-iconde" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
                     <app-contact-body-panel class="col-lg-12"></app-contact-body-panel>
                 </div>
-                <div class="tab-pane fade" id="nav-cv" role="tabpanel" aria-labelledby="nav-cv-tab">
+                <div class="tab-pane fa-iconde" id="nav-cv" role="tabpanel" aria-labelledby="nav-cv-tab">
                     <app-cv-body-panel class="col-lg-12"></app-cv-body-panel>
                 </div>
             </div>
