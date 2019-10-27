@@ -1,31 +1,40 @@
 <div class="container">
-    <p>Computers have always fascinated me since I was a little boy and also the machines that involve engineering make
-        me
-        think in the way how a man can resolve big problems that years ago were impossible to solve.
-        I consider myself an introverted and practical person, with a critical and ambitious spirit.
-        Studying at FEUP has opened new horizons about Computer Engineering give me tools that allow me to better adapt
-        to
-        the business market and to think the better way to resolve problems.
-        Through volunteering (G.A.S. Porto) I developed skills such as interpersonal relationships, teamwork,
-        organization
-        and problem-solving.
-        To improve my self as a software engineer is necessary to cultivate new things that create value in my work, and
-        for
-        example, I recently started reading the "Clean Code" by Robert Martin (Uncle Bob), one the book that I think
-        that
-        all developers should read for improving the development of software and also a clean, organize and simple
-        structure
-        of the code. </p>
+    <div class="text-center">
+        <img class="img-responsive" src="assets/images/profile.png" alt="image">
+    </div>
+    <p>Computers have always fascinated me since I was a little boy.
+        I consider myself an introverted and practical person, with a critical and ambitious spirit.</p>
+    <p> Studying at <a [href]="feup" target="_blank">FEUP</a> has opened new horizons about Computer Engineering giving
+        the knowing
+        to resolve problems in a good way
+        as a consequence an ability to adapt to the business market.
+        Through volunteering (<a [href]="gasPorto" target="_blank">G.A.S. Porto</a>) I developed skills such as
+        interpersonal
+        relationships, teamwork, and
+        organization. </p>
+    <p> Furthermore than making code, I like to see any project with a high level view and how all the modules work
+        with each other.
+        I like to think in architectural terms to separate business logic from data access.
+        To improve my self as a software engineer is necessary to cultivate new things that create value in my work,
+        and for example, I recently started reading the "Clean Code" by Robert Martin (Uncle Bob), one the book that I
+        think
+        that all developers should read for improving the development of software for making it clean, organized and
+        readabled by others. </p>
+    <p>In my free time I enjoy landscape photography, doing trails and traveling.</p>
 
     <div class="row">
-        <a [href]="linkedin">
-            <fa-icon id="linkedin" [icon]="faLinkedin" size="2x"></fa-icon>
-        </a>
-        <a [href]="stackOverflowLink">
-            <fa-icon id="stackOverflow" [icon]="faStackOverflow" size="2x"></fa-icon>
-        </a>
-        <a [href]="stackOverflowLink">
-            <fa-icon id="github" [icon]="faGithub" size="2x"></fa-icon>
-        </a>
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+            <a [href]="linkedin" target="_blank">
+                <fa-icon id="linkedin" [icon]="faLinkedin" size="2x"></fa-icon>
+            </a>
+            <a [href]="github" target="_blank">
+                <fa-icon id="github" [icon]="faGithub" size="2x"></fa-icon>
+            </a>
+            <a [href]="stackOverflowLink" target="_blank">
+                <fa-icon id="stackOverflow" [icon]="faStackOverflow" size="2x"></fa-icon>
+            </a>
+        </div>
+        <div class="col-md-4"></div>
     </div>
 </div>

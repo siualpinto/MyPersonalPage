@@ -3,11 +3,24 @@ p {
 }
 
 #linkedin {
+  padding-left: 5%;
   color: #0077b5;
 }
 #stackOverflow {
+  padding-left: 5%;
   color: #f48023;
 }
 #github {
+  padding-left: 5%;
   color: black;
+}
+
+.row {
+  padding-left: 15%;
+}
+
+img {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
 }
