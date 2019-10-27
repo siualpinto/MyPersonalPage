@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { faInstagram, fa500px } from '@fortawesome/free-brands-svg-icons';
 
 @Component({
   selector: 'app-photo-body-panel',
@@ -6,7 +7,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./photo-body-panel.component.scss']
 })
 export class PhotoBodyPanelComponent implements OnInit {
-  images = [1, 2, 3].map(() => `https://picsum.photos/900/500?random&t=${Math.random()}`);
+  faInstagram = faInstagram;
+  fa500px = fa500px;
+  instagramLink = 'https://www.instagram.com/alberto_p.h.o.t.o/';
+  pixLink = 'https://500px.com/lsmoreira77';
   constructor() { }
 
   ngOnInit() {
