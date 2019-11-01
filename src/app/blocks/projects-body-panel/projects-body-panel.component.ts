@@ -9,7 +9,7 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons';
 export class ProjectsBodyPanelComponent implements OnInit {
   project1 = 'https://ideiassustentaveis.fe.up.pt/';
   githubProject1 = 'https://github.com/pcostaeu/LDSO_MoreSustainableIdeas';
-  githubProject2 = 'https://github.com/JoaoMonteiro100/lgp-brainlight';
+  githubProject2 = 'https://github.com/JoaoMonteiro100/LGP-5A';
   faGithub = faGithub;
   constructor() { }
 

@@ -10,8 +10,8 @@
                         About me
                     </span>
                 </a>
-                <a class="nav-item nav-link" id="nav-blog-tab" data-toggle="tab" (click)="navigateToBlog()"
-                    [href]="blogLink" role="tab" aria-controls="nav-blog" aria-selected="fa-iconlse"><span>
+                <a class="nav-item nav-link" id="nav-blog-tab" data-toggle="tab" href="#nav-blog" role="tab"
+                    aria-controls="nav-blog" aria-selected="fa-iconlse"><span>
                         <fa-icon [icon]="faBlog" [spin]="animationStyle" size="lg"></fa-icon> Blog
                     </span>
                 </a>
@@ -24,7 +24,7 @@
                     aria-controls="nav-photo" aria-selected="fa-iconlse"><span>
                         <fa-icon [icon]="faCameraRetro" [spin]="animationStyle" size="lg"></fa-icon> Photography
                     </span>
-                </a>               
+                </a>
                 <a class="nav-item nav-link" id="nav-cv-tab" data-toggle="tab" href="#nav-cv" role="tab"
                     aria-controls="nav-cv" aria-selected="fa-iconlse"><span>
                         <fa-icon [icon]="faFilePdf" [spin]="animationStyle" size="lg"></fa-icon> CV
@@ -38,12 +38,15 @@
                     aria-labelledby="nav-home-tab">
                     <app-profile-body-panel class="col-lg-12"></app-profile-body-panel>
                 </div>
+                <div class="tab-pane fa-iconde" id="nav-blog" role="tabpanel" aria-labelledby="nav-blog-tab">
+                    <app-blog-body-panel class="col-lg-12"></app-blog-body-panel>
+                </div>
                 <div class="tab-pane fa-iconde" id="nav-projects" role="tabpanel" aria-labelledby="nav-projects-tab">
                     <app-projects-body-panel class="col-lg-12"></app-projects-body-panel>
                 </div>
                 <div class="tab-pane fa-iconde" id="nav-photo" role="tabpanel" aria-labelledby="nav-photo-tab">
                     <app-photo-body-panel class="col-lg-12"></app-photo-body-panel>
-                </div>                
+                </div>
                 <div class="tab-pane fa-iconde" id="nav-cv" role="tabpanel" aria-labelledby="nav-cv-tab">
                     <app-cv-body-panel class="col-lg-12"></app-cv-body-panel>
                 </div>

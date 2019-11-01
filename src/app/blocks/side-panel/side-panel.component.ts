@@ -7,7 +7,6 @@ import { faCameraRetro, faIdBadge, faCubes, faFilePdf, faBlog, faEnvelopeSquare 
   styleUrls: ['./side-panel.component.scss']
 })
 export class SidePanelComponent implements OnInit {
-  blogLink = 'https://medium.com/@lsmoreira77/latest';
   faCameraRetro = faCameraRetro;
   faIdBadge = faIdBadge;
   faCubes = faCubes;
@@ -19,9 +18,5 @@ export class SidePanelComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-  }
-
-  navigateToBlog() {
-    window.open(this.blogLink);
   }
 }

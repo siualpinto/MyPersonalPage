@@ -11,6 +11,7 @@ import { CvBodyPanelComponent } from './blocks/cv-body-panel/cv-body-panel.compo
 import { PhotoBodyPanelComponent } from './blocks/photo-body-panel/photo-body-panel.component';
 import { SidePanelComponent } from './blocks/side-panel/side-panel.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { BlogBodyPanelComponent } from './blocks/blog-body-panel/blog-body-panel.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     ProjectsBodyPanelComponent,
     CvBodyPanelComponent,
     PhotoBodyPanelComponent,
-    SidePanelComponent
+    SidePanelComponent,
+    BlogBodyPanelComponent
   ],
   imports: [
     BrowserModule,
