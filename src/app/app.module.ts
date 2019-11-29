@@ -12,6 +12,7 @@ import { PhotoBodyPanelComponent } from './blocks/photo-body-panel/photo-body-pa
 import { SidePanelComponent } from './blocks/side-panel/side-panel.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { BlogBodyPanelComponent } from './blocks/blog-body-panel/blog-body-panel.component';
+import { NgxExtendedPdfViewerModule } from 'ngx-extended-pdf-viewer';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { BlogBodyPanelComponent } from './blocks/blog-body-panel/blog-body-panel
     AppRoutingModule,
     FormsModule,
     NgbModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    NgxExtendedPdfViewerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
