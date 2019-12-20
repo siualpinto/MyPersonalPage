@@ -10,6 +10,7 @@ export class ProjectsBodyPanelComponent implements OnInit {
   project1 = 'https://ideiassustentaveis.fe.up.pt/';
   githubProject1 = 'https://github.com/pcostaeu/LDSO_MoreSustainableIdeas';
   githubProject2 = 'https://github.com/JoaoMonteiro100/LGP-5A';
+  github = 'https://github.com/siualpinto';
   faGithub = faGithub;
   constructor() { }
 
